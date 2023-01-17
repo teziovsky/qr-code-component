@@ -27,12 +27,13 @@
       }
 
       body {
+        position: relative;
         background-color: var(--light-gray);
         min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 2rem;
+        padding: 4rem 2rem;
       }
 
       .card {
@@ -75,18 +76,22 @@
         margin-bottom: 1rem;
       }
 
-      .card-attribution {
+      .footer {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
         color: var(--grayish-blue);
         font-size: 0.625rem;
         text-align: center;
       }
 
-      .card-attribution a {
+      .footer a {
         color: var(--dark-blue);
         text-decoration: none;
       }
 
-      .card-attribution a:hover {
+      .footer a:hover {
         text-decoration: underline;
       }
     </style>
@@ -106,15 +111,12 @@
           <p class="card-description">
             Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
           </p>
-
-          <div class="card-attribution">
-            <p>
-              Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-            </p>
-            <p>Coded by <a href="https://twitter.com/teziovsky/">Jakub Soboczyński</a>.</p>
-          </div>
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+      <p>Coded by <a href="https://twitter.com/teziovsky/">Jakub Soboczyński</a>.</p>
+    </footer>
   </body>
 </html>
